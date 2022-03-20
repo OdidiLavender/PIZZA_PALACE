@@ -48,5 +48,53 @@ $(document).ready(function(){
     var pizzaPrice;
     var pizzaName;
 
+    
+// Loops over each pizza and adds image to modal
+pizzas.forEach(function(pizza){
+    $('#' + pizza.id + '-btn').click(function(){
+        $('#pizza-img').prepend('<img src=' + pizza.img + ' id=' + pizza.id + '>');
+
+        $('#pizza-name').prepend('<h2 id=pepperoni-title>' + pizza.name + '</h2>');
+
+        $('#initial-price-pre-text').append('<h2 id="initial-price-text"> Ksh. ' + pizza.price + '</h2>');
+
+        pizzaPrice = pizza.price;
+        pizzaName = pizza.name;
+    });
+    $("#myModal").on('hidden.bs.modal', function(){
+        $('#' + pizza.id).remove();
+
+        $('#' + pizza.id + '-title').remove();
+
+        $('#initial-price-text').remove();
+
+    });
+
+});
+
+$("#calculate").click(function(){
+    $(".title").show();
+});
+
+$("form").submit(function(event){
+    event.preventDefault();
+
+    var size = $("input:radio[name=size]:checked").val();
+    var crust = $("#select-crust").val();
+    var quantity = $("#quantity").val();
+    var orderType = $("#order-type").val();
+    var firstName = $("#first-name").val();
+    var lastName = $("#last-name").val();
+    var emailAddress = $("#email-address").val();
+    var phoneNumber = $("#phone").val();
+    var county = $("#county").val();
+    var address = $("#address").val();
+
+    var newName = new Contact(firstName, lastName, phoneNumber, emailAddress, address);
+
+    var newPizza = new Pizza(size, quantity, crust, orderType);
+
+    var deliveryFee = 250;
+
 
 
