@@ -141,7 +141,27 @@ $("form").submit(function(event){
         }else if (newPizza.size === "medium" && newPizza.crust === "gluten-free" && newPizza.orderType === "delivery"){
             $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 150 + 150 + deliveryFee));
         }
-        
+
+
+        // ### SMALL ###
+        // dine
+        else if (newPizza.size === "small" && newPizza.crust === "cryspy" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice));
+        }else if (newPizza.size === "small" && newPizza.crust === "stuffed" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 50));
+        }else if (newPizza.size === "small" && newPizza.crust === "gluten-free" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 100));
+        }
+
+        // delivery
+        else if (newPizza.size === "small" && newPizza.crust === "cryspy" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + deliveryFee));
+        }else if (newPizza.size === "small" && newPizza.crust === "stuffed" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 50 + deliveryFee));
+        }else if (newPizza.size === "small" && newPizza.crust === "gluten-free" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 100 + deliveryFee));
+        }
+
 
 
 
