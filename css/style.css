@@ -243,6 +243,8 @@
     .card-body{
         margin-top: -30px;
         color: var(--text-color);
+        color: black;
+        
     }
 
     .card-body span{
