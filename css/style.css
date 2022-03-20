@@ -411,5 +411,36 @@
     height: 50px;
     font-size: 24px;
 }
+  /* Total Output */
+  #total-output{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--button-color);
+}
+
+/* output heading */
+#order-summary{
+    text-align: center;
+    margin-top: 40px;
+    color: var(--text-color);
+    font-size: 48px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(73,108,216, .5);
+}
+
+.summary{
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.title{
+    display: none;
+}
+}
+
 
 
