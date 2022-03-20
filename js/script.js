@@ -48,8 +48,8 @@ $(document).ready(function(){
     var pizzaPrice;
     var pizzaName;
 
-    
-// Loops over each pizza and adds image to modal
+
+// Loops over each pizza and adds image to type
 pizzas.forEach(function(pizza){
     $('#' + pizza.id + '-btn').click(function(){
         $('#pizza-img').prepend('<img src=' + pizza.img + ' id=' + pizza.id + '>');
@@ -96,5 +96,21 @@ $("form").submit(function(event){
 
     var deliveryFee = 250;
 
+
+         // var newAddress = new Address(county, address);
+
+        // newName.address.push(newAddress);
+
+        // alert(newPizza.orderType);
+
+        // ### LARGE ###
+        // dine
+        if (newPizza.size === "large" && newPizza.crust === "cryspy" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 300));
+        }else if (newPizza.size === "large" && newPizza.crust === "stuffed" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 300 + 100));
+        }else if (newPizza.size === "large" && newPizza.crust === "gluten-free" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 300 + 200));
+        }
 
 
