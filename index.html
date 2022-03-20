@@ -35,25 +35,81 @@
     </div>
 </div>
 <!-- Hero Section -->
-<div class="container-fluid hero-section">
-    <div class="row hero-inner">
-        <!-- Left column -->
-        <div class="col-12 col-sm-12 col-md-6">
-            <h6 id="sub-heading"> Pizza Palace</h6>
-            <h1 id="heading">Order Your Favorite Pizza Today</h1>
-            <p id="paragraph">Give your taste-buds a taste of paradise with our variety of toppings today at an affordable price.</p>
-            <!-- Buttons -->
-            <div class="row buttons">
-                <!-- Button -->
-                <div class="col-12 col-sm-12 col-md-6">
-                    <button class="btn btn-primary get-started-btn" onclick="window.location.href='#select-heading'"><b>ORDER NOW</b></button>
-                </div>
-        <!-- Right column -->
-        <div class="right-column">
-            <img src="./images/bg.jpg" alt="pizza">
+
+    <div class="container-fluid hero-section">
+        <div class="row hero-inner">
+            <!-- Left column -->
+            <div class="col-12 col-sm-12 col-md-6">
+                <h6 id="sub-heading"> PIZZA PALACE</h6>
+                <h1 id="heading">Order Your Favorite Pizza Today</h1>
+                <p id="paragraph">Give your taste-buds a taste of paradise with our variety of toppings today at an affordable price.</p>
+                <!-- Buttons -->
+                <div class="row buttons">
+                    <!-- Button -->
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <button class="btn btn-primary get-started-btn" onclick="window.location.href='#select-heading'"><b>ORDER NOW</b></button>
+                    </div>
+
+                 <!-- Right column -->
+             <div class="right-column">
+                <img src="./images/bg3.jpg" alt="pizza">
+            </div>
         </div>
     </div>
-</div>
+    <!-- PopUp Modal -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <form action="#">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <div class="modal-header-container container">
+                                        <div class="row">
+                                            <!-- pizza image -->
+                                        <div class="col-12 col-md-4" id="pizza-img"></div>
+                                        <!-- buttons and name -->
+                                        <div class="col-12 col-md-8 modal-header-buttons">
+                                            <div class="modal-header-gap">
+                                                <!-- Radio -->
+                                                <div class="radio-buttons">
+                                                    <!-- Small -->
+                                                    <div class="radio form-group">
+                                                        <label class="radio-label">
+                                                            Small
+                                                            <input class="form-control" type="radio" name="size" value="small" checked id="small">
+                                                        </label>
+                                                    </div>
+                                                    <!-- Medium -->
+                                                    <div class="radio form-group">
+                                                        <label class="radio-label">
+                                                            Medium
+                                                            <input class="form-control" type="radio" name="size" value="medium" id="medium">
+                                                        </label>
+                                                    </div>
+                                                    <!-- Large -->
+                                                    <div class="radio form-group">
+                                                        <label class="radio-label">
+                                                            Large
+                                                            <input class="form-control" type="radio" name="size" value="large" id="large">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- Crust -->
+                                                <div class="radio form-group">
+                                                    <label id="select-label">
+                                                        <b>TOPPINGS</b>
+                                                        <select name="select-crust" id="select-crust" class="form-control">
+                                                            <option value="cryspy">Cryspy</option>
+                                                            <option value="stuffed">Stuffed</option>
+                                                            <option value="gluten-free">Gluten-free</option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
 
 
 
