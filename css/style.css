@@ -35,94 +35,29 @@
     .fa-bars{
         display: block;
         font-size: 48px;
-        color: var(--heading-color);
-    }
-
-    /* ##### Hero section ###### */
-    .hero-section{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    /* Sub heading */
-    #sub-heading{
-        font-size: 18px;
-        color: var(--button-color);
-        letter-spacing: 10px;
-        font-weight: bold;
-    }
-
-    /* heading */
-    #heading{
-        font-weight: bold;
-        line-height: 55px;
-        color: var(--heading-color);
-        font-size: 48px;
-    }
-
-    /* Paragraph */
-    #paragraph{
-        margin-top: 30px;
-        font-size: 24px;
-        color: var(--text-color);
-        line-height: 30px;
-    }
-
-    /* Button */
-    .get-started-btn{
-        width: 100%;
-        height: 50px;
-        margin-bottom: 20px;
-        font-size: 24px;
-        border-radius: var(--primary-radius);
-        margin-top: 30px;
-        background-color: var(--heading-color);
-        color: var(--button-color);
-        font-weight: bold;
-        border: none;
-    }
-
-    .get-started-btn:focus{
-        background-color: var(--button-color);
         color: white;
     }
-
-    /* Social icons */
-    .icons{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .icon{
-        color: var(--button-color);
-    }
-
-    /* hides the svg */
-    .right-column{
-        display: none;
-    }
+/* ##### HERO SECTION ##### */
+.hero-section{
+    margin-top: 100px;
 }
 
-/* Tablet */
-@media screen and (min-width: 700px){
-    /* Body */
-    body{
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 50px;
-    }
+/* sub-heading */
+#sub-heading{
+    font-size: 32px; 
+}
 
-    /* Logo */
-    #logo{
-        width: 100px;
-        height: 100px;
-    }
+/* paragraph */
+#paragraph{
+    font-size: 24px;
+    line-height: 40px;
+}
 
-    /* Hamburger Icon */
-    .fa-bars{
-        display: block;
-        font-size: 96px;
-    }
+/* button */
+.get-started-btn{
+    width: 100%;
+
+}
+
+/*  */
+}
