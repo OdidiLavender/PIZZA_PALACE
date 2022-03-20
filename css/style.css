@@ -4,6 +4,17 @@
     box-sizing: border-box;
 
 }
+/* Default styles */
+:root{
+    --padding-left-right: 170px;
+    --background-color: black;
+    --illustration-container-color: maroon;
+    --button-color: #496CD8;
+    --heading-color: #fff;
+    --primary-radius: 20px;
+    --text-color: #fff;
+}
+
 @media screen and (min-width: 350px){
     /* Body */
     body{
@@ -56,6 +67,8 @@
 /* button */
 .get-started-btn{
     width: 100%;
+    border-radius: 10px;
+    color: #000;
 
 }
 
