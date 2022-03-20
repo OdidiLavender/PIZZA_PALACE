@@ -9,7 +9,7 @@
     --padding-left-right: 170px;
     --background-color: black;
     --illustration-container-color: maroon;
-    --button-color: #496CD8;
+    --button-color: maroon;
     --heading-color: #fff;
     --primary-radius: 20px;
     --text-color: #fff;
@@ -66,9 +66,11 @@
 
 /* button */
 .get-started-btn{
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
-    color: #000;
+    color: white;
+    background-color: rgb(1, 7, 27);
+    border: none;
 
 }
 
