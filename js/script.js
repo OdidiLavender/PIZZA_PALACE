@@ -123,5 +123,25 @@ $("form").submit(function(event){
         }
 
 
+         // ### MEDIUM ###
+        // dine
+        if (newPizza.size === "medium" && newPizza.crust === "cryspy" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 150));
+        }else if (newPizza.size === "medium" && newPizza.crust === "stuffed" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 150 + 100));
+        }else if (newPizza.size === "medium" && newPizza.crust === "gluten-free" && newPizza.orderType === "dine"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 150 + 150));
+        }
+
+        // delivery
+        if (newPizza.size === "medium" && newPizza.crust === "cryspy" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 150 + deliveryFee));
+        }else if (newPizza.size === "medium" && newPizza.crust === "stuffed" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 150 + 100 + deliveryFee));
+        }else if (newPizza.size === "medium" && newPizza.crust === "gluten-free" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 150 + 150 + deliveryFee));
+        }
+        
+
 
 
