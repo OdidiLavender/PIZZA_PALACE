@@ -161,7 +161,36 @@ $("form").submit(function(event){
         }else if (newPizza.size === "small" && newPizza.crust === "gluten-free" && newPizza.orderType === "delivery"){
             $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 100 + deliveryFee));
         }
+         
 
+
+        var url = "ft-checkout.html";
+
+        $("#checkout").click(function(){
+            $(location).attr('href',url);
+        });
+
+        if (orderType === "dine"){
+            deliveryFee = 0;
+        }else if (orderType === "delivery"){
+            deliveryFee = 250
+        }
+
+        $("#order-summary").text("Order Summary");
+        $("#name-summary").text(newName.fullName());
+        $("#email-summary").text(newName.emailAddress);
+        $("#phone-summary").text(newName.phoneNumber);
+        $("#address-summary").text(newName.address);
+        $("#pizza-name-summary").text(pizzaName + ", " + newPizza.crust);
+        $("#quantity-summary").text(newPizza.quantity + ", " + newPizza.size + ",  Delivery Charges: " + deliveryFee);
+    });
+
+});
+
+// create name, contact, address and pizza constructors
+// Cryspy, Stuffed, Gluten-free
+
+   
 
 
 
