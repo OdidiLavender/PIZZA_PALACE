@@ -113,4 +113,15 @@ $("form").submit(function(event){
             $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 300 + 200));
         }
 
+         // delivery
+         if (newPizza.size === "large" && newPizza.crust === "cryspy" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 300 + deliveryFee));
+        }else if (newPizza.size === "large" && newPizza.crust === "stuffed" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 300 + 100 + deliveryFee));
+        }else if (newPizza.size === "large" && newPizza.crust === "gluten-free" && newPizza.orderType === "delivery"){
+            $("#total-output").text("Total: " + newPizza.total(pizzaPrice + 300 + 200 + deliveryFee));
+        }
+
+
+
 
