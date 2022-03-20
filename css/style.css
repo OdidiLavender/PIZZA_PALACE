@@ -79,3 +79,73 @@
 
 /*  */
 }
+/* Desktop */
+@media screen and (min-width: 1100px){
+    /* Nav menu */
+    .nav-menu{
+        padding-left: var(--padding-left-right);
+        padding-right: var(--padding-left-right);
+    }
+
+    /* Hero section */
+    .hero-section{
+        padding-left: var(--padding-left-right);
+        padding-right: var(--padding-left-right);
+    }
+
+    /* Logo */
+    #logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Hamburger Icon */
+    #hamburger-icon{
+        display: none;
+    }
+    /* Menu list */
+    .menu{
+        display: block;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--heading-color);
+    }
+
+    /* Hover */
+    .menu li{
+        cursor: pointer;
+    }
+
+    .menu li:hover{
+        border-bottom: solid var(--heading-color) 3px;
+    }
+
+    /* button */
+    .get-started-btn{
+        background-color: var(--heading-color);
+        width: 100%;
+        height: 50px;
+        border-radius: var(--primary-radius);
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--button-color);
+        border: none;
+    }
+
+    /* Button hover */
+    .get-started-btn:hover{
+        background-color: var(--button-color);
+    }
+
+    .get-started-btn:focus{
+        background-color: var(--heading-color);
+        color: var(--button-color);
+        box-shadow: none;
+    }
+
